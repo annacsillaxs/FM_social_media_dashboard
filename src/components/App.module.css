@@ -1,0 +1,7 @@
+@import "../utils/vars.css";
+
+.app {
+  background-color: var(--dark-bg);
+  min-height: 100vh;
+  width: 100vw;
+}

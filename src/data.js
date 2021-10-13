@@ -1,0 +1,78 @@
+import fbIcon from "./images/icon-facebook.svg";
+import instaIcon from "./images/icon-instagram.svg";
+import twIcon from "./images/icon-twitter.svg";
+import ytIcon from "./images/icon-youtube.svg";
+import down from "./images/icon-down.svg";
+import up from "./images/icon-up.svg";
+
+const data = [
+  {
+    id: "Facebook",
+    name: "@nathanf",
+    social: fbIcon,
+    followers: "Followers",
+    amount: 1987,
+    today_change: 12,
+    today_arrow: up,
+    view_title: "Page Views",
+    view_count: 87,
+    view_change: 3,
+    view_arrow: up,
+    likes_title: "Likes",
+    likes_count: 52,
+    likes_change: 2,
+    likes_arrow: down,
+  },
+  {
+    id: "Twitter",
+    name: "@nathanf",
+    social: twIcon,
+    followers: "Followers",
+    amount: 1044,
+    today_change: 99,
+    today_arrow: up,
+    view_title: "Retweets",
+    view_count: 117,
+    view_change: 303,
+    view_arrow: up,
+    likes_title: "Likes",
+    likes_count: 507,
+    likes_change: 553,
+    likes_arrow: up,
+  },
+  {
+    id: "Instagram",
+    name: "@realnathanf",
+    social: instaIcon,
+    followers: "Followers",
+    amount: "11k",
+    today_change: 1099,
+    today_arrow: up,
+    view_title: "Profile Views",
+    view_count: "52k",
+    view_change: 1375,
+    view_arrow: up,
+    likes_title: "Likes",
+    likes_count: 5462,
+    likes_change: 2257,
+    likes_arrow: up,
+  },
+  {
+    id: "Youtube",
+    name: "Nathan F.",
+    social: ytIcon,
+    followers: "Subscribers",
+    amount: 8239,
+    today_change: 144,
+    today_arrow: down,
+    view_title: "Total Views",
+    view_count: 1407,
+    view_change: 12,
+    view_arrow: down,
+    likes_title: "Likes",
+    likes_count: 107,
+    likes_change: 19,
+    likes_arrow: down,
+  },
+];
+export default data;

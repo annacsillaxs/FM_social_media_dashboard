@@ -1,0 +1,67 @@
+@import "../utils/vars.css";
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(max-content, 50%));
+  grid-template-rows: repeat(2, 50%);
+  align-items: center;
+  max-width: 280px;
+  width: 100%;
+  align-self: stretch;
+  background-color: var(--dark-card);
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.card:hover {
+  background-color: var(--dark-card--hover);
+}
+
+.card > * {
+  padding: 0.5rem;
+}
+
+.card-icon,
+.icon-wrapper {
+  justify-self: end;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 0.7rem;
+  font-size: clamp(
+    0.7rem,
+    0.6599999999999999rem + 0.2000000000000001vw,
+    0.9rem
+  );
+  font-weight: 700;
+  color: var(--dark-text-grey);
+}
+
+.card-count {
+  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 1.02rem + 0.3999999999999999vw, 1.5rem);
+  color: var(--dark-text-white);
+  font-weight: 700;
+}
+
+.card-change {
+  margin-left: 0.5em;
+  font-weight: 700;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+}
+
+.card-change.up {
+  color: var(--green);
+}
+
+.card-change.down {
+  color: var(--red);
+}

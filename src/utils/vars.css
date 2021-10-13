@@ -1,0 +1,43 @@
+:root {
+  --dark-bg: hsl(230, 17%, 14%);
+  --dark-bg--top: hsl(232, 19%, 15%);
+  --dark-card: hsl(230, 27%, 27%);
+  --dark-card--hover: hsl(230, 30%, 32%);
+  --dark-text-grey: hsl(228, 34%, 66%);
+  --dark-text-white: hsl(0, 0%, 100%);
+
+  --light-bg: hsl(0, 0%, 100%);
+  --light-bg--top: hsl(225, 100%, 98%);
+  --light-card: hsl(227, 47%, 96%);
+  --light-text-grey: hsl(228, 12%, 44%);
+  --light-text-dark: hsl(230, 17%, 14%);
+
+  --text--grey: #808bb0;
+  --red: hsl(356, 69%, 56%);
+  --green: hsl(163, 72%, 41%);
+
+  --btn-green: hsl(146, 68%, 55%);
+  --btn--blue: hsl(210, 78%, 56%);
+  --btn-grey: hsl(230, 22%, 74%);
+
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram--left: hsl(37, 97%, 70%);
+  --instagram--right: hsl(329, 70%, 58%);
+  --youtube: hsl(348, 97%, 39%);
+}
+
+html {
+  transition: all 0.2s ease-in;
+}
+
+html.dark {
+  --dark-bg: hsl(0, 0%, 100%);
+  --dark-bg--top: hsl(225, 100%, 98%);
+  --dark-card: hsl(227, 47%, 96%);
+  --dark-text-grey: hsl(228, 12%, 44%);
+  --dark-text-white: hsl(230, 17%, 14%);
+
+  --btn-green: hsl(230, 22%, 74%);
+  --btn--blue: hsl(230, 22%, 74%);
+}

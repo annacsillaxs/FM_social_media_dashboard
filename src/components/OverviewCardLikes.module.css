@@ -1,0 +1,8 @@
+@import "../utils/vars.css";
+
+.card {
+  display: grid;
+  max-width: 280px;
+  width: 100%;
+  background-color: var(--dark-card);
+}

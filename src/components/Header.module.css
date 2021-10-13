@@ -1,0 +1,33 @@
+@import "../utils/vars.css";
+
+.header {
+  min-height: 30vh;
+  background-color: var(--dark-bg--top);
+  padding-top: 5vh;
+}
+
+.header_title-box {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 3;
+}
+
+.header_title {
+  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 1.04rem + 0.8vw, 2rem);
+  font-weight: 700;
+  color: var(--dark-text-white);
+}
+
+.header_text {
+  font-weight: 700;
+  color: var(--dark-text-grey);
+  margin-right: 3rem;
+}
+
+.header_btn-box {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  grid-column: 3 / -1;
+}

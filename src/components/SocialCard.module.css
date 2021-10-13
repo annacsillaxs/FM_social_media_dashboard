@@ -1,0 +1,100 @@
+@import "../utils/vars.css";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-card);
+  max-width: 280px;
+  padding: 1.5rem 0.5rem;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.card:hover {
+  background-color: var(--dark-card--hover);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.card.Facebook.card::before {
+  background-image: linear-gradient(90deg, var(--facebook), var(--facebook));
+}
+
+.card.Youtube.card::before {
+  background-image: linear-gradient(90deg, var(--youtube), var(--youtube));
+}
+
+.card.Instagram.card::before {
+  background-image: linear-gradient(
+    90deg,
+    var(--instagram--left),
+    var(--instagram--right)
+  );
+}
+
+.card.Twitter.card::before {
+  background-image: linear-gradient(90deg, var(--twitter), var(--twitter));
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.card-name {
+  font-size: 0.6rem;
+  font-size: clamp(
+    0.6rem,
+    0.5399999999999999rem + 0.30000000000000004vw,
+    0.9rem
+  );
+  color: var(--dark-text-grey);
+  margin: 1em auto 1em 0.5em;
+}
+
+.card-num {
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.7rem + 1.5vw, 3.5rem);
+  color: var(--dark-text-white);
+  font-weight: 700;
+}
+
+.card-desc {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-size: clamp(
+    0.6rem,
+    0.5599999999999999rem + 0.2000000000000001vw,
+    0.8rem
+  );
+  letter-spacing: 0.45em;
+  color: var(--dark-text-grey);
+  margin: 0.25em auto 1.5em;
+}
+
+.card-daily {
+  font-size: 0.55rem;
+  font-size: clamp(0.55rem, 0.52rem + 0.1499999999999999vw, 0.7rem);
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.card-daily.up {
+  color: var(--green);
+}
+
+.card-daily.down {
+  color: var(--red);
+}
